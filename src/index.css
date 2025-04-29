@@ -1,0 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 26% 14%;
+    --foreground: 40 30% 96%;
+
+    --card: 220 26% 14%;
+    --card-foreground: 40 30% 96%;
+
+    --popover: 220 26% 14%;
+    --popover-foreground: 40 30% 96%;
+
+    --primary: 84 19% 64%;
+    --primary-foreground: 220 26% 14%;
+
+    --secondary: 44 38% 83%;
+    --secondary-foreground: 220 26% 14%;
+
+    --muted: 220 14% 22%;
+    --muted-foreground: 40 20% 80%;
+
+    --accent: 84 19% 64%;
+    --accent-foreground: 220 26% 14%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 14% 22%;
+    --input: 220 14% 22%;
+    --ring: 84 19% 64%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-poppins;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+
+  .hero-wipe-effect {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-wipe-effect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(189, 207, 171, 0.6);
+    z-index: 10;
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+    animation: wipeRight 1.2s forwards ease-in-out;
+  }
+
+  @keyframes wipeRight {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+}
