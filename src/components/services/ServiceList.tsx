@@ -160,7 +160,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 }) => {
   return (
     <div
-      className={`grid md:grid-cols-2 gap-10 items-center ${
+      className={`grid lg:grid-cols-2 gap-10 items-center ${
         reverse ? "md:flex-row-reverse" : ""
       }`}
     >
