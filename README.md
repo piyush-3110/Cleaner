@@ -32,7 +32,7 @@ A premium, responsive website for PureTouch Cleaning Co., a local cleaning busin
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/piyush-3110/Cleaner
 cd puretouch-cleaning-website
 ```
 
@@ -88,14 +88,6 @@ The website should now be running at `http://localhost:8080`.
    - Output Directory: `dist`
 4. Deploy
 
-### Deploying to Netlify
-
-1. Push your code to a GitHub repository
-2. Connect your repository to Netlify
-3. Configure the build settings:
-   - Build Command: `npm run build`
-   - Publish Directory: `dist`
-4. Deploy
 
 ## License
 
@@ -103,5 +95,4 @@ This project is licensed under the MIT License.
 
 ## Credits
 
-- Design inspiration from premium coffee websites
 - Images sourced from placeholder services (replace with actual business photos)
